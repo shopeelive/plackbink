@@ -49,15 +49,40 @@
     border-bottom: 1px solid;
 }
 
-textarea,
-#uploadBtn {
-    width: 100%;
+textarea {
+    width: 94%;
     margin-bottom: 5px;
-    padding: 8px;
+    padding: 15px;
     border-radius: 5px;
     border: 1px solid;
+    margin-left: 0px;
     cursor: pointer;
+    resize: none;
 }
+
+#uploadBtn {
+    background: linear-gradient(135deg, #4a90e2, #007aff);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#uploadBtn:hover {
+    background: linear-gradient(135deg, #007aff, #4a90e2);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+#uploadBtn:active {
+    transform: scale(0.98);
+}
+
 
 
 .tweet {

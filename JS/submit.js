@@ -15,6 +15,7 @@ export const onSubmit = (database, renderQuotes, text, file, base64) => {
 
         newQuoteRef.set(quoteObject)
             .then(() => {
+                location.reload();
                 renderQuotes(database);
             })
             .catch((error) => {
